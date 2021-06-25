@@ -7,9 +7,9 @@ public class MainThread {
 		ct.start();
 		// Thread.yield();
 		// ct.join();
-
+		ct.interrupt();
 		for (int i = 1; i <= 5; i++) {
-			ct.interrupt();
+			
 			System.out.println("Main Thred " + i);
 		}
 
